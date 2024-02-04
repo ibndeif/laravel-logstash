@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "968f6921b2bea188f8add8ecb112cd37",
+    "content-hash": "4f0fce9946ed2e8cac9bac0e1b8c295d",
     "packages": [
         {
             "name": "elastic/ecs-logging",
