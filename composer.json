@@ -3,6 +3,7 @@
     "description": "send logs to logstash over tcp formatter by ecs",
     "type": "library",
     "require": {
+        "php":">=7.4",
         "elastic/ecs-logging": "1.0.3"
     },
     "license": "MIT",
@@ -17,5 +18,10 @@
             "email": "ibndeif@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel":{
+            "providers":"Deif\\Logstash\\LogstashProvider"
+        }
+    }
 }
