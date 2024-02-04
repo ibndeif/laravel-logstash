@@ -21,7 +21,7 @@
     "minimum-stability": "dev",
     "extra": {
         "laravel":{
-            "providers":"Deif\\Logstash\\LogstashProvider"
+            "providers":"Deif\\Logstash\\Providers\\LogstashProvider"
         }
     }
 }

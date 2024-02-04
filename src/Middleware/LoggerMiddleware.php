@@ -35,9 +35,6 @@ class LoggerMiddleware
                 'domain' => $request->getHost(),
                 'full' => url()->current(),
                 'path' => $request->path()
-            ],
-            'event'=>[
-                'dataset'=>'Dashboard'
             ]
         ];
 
