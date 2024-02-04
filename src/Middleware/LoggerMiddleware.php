@@ -1,6 +1,6 @@
 <?php
 
-namespace Namaa\Logstash\Middleware;
+namespace Deif\Logstash\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

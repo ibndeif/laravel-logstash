@@ -1,5 +1,5 @@
 {
-    "name": "namaa/logstash",
+    "name": "deif/logstash",
     "description": "send logs to logstash over tcp formatter by ecs",
     "type": "library",
     "require": {
@@ -8,13 +8,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Namaa\\Logstash\\": "src/"
+            "Deif\\Logstash\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Ahmed Deif",
-            "email": "a.deif@namaa.solutions.com"
+            "email": "ibndeif@gmail.com"
         }
     ],
     "minimum-stability": "dev"

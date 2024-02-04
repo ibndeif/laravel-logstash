@@ -1,12 +1,12 @@
 <?php
-namespace Namaa\Logstash\Providers;
+namespace Deif\Logstash\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\Facades\Log;
 
-use Namaa\Logstash\LogstashLogger;
-use Namaa\Logstash\Middleware\LoggerMiddleware;
+use Deif\Logstash\LogstashLogger;
+use Deif\Logstash\Middleware\LoggerMiddleware;
 
 class LogstashProvider extends ServiceProvider
 {

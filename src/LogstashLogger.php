@@ -1,5 +1,5 @@
 <?php
-namespace Namaa\Logstash;
+namespace Deif\Logstash;
 
 use Monolog\Handler\SocketHandler;
 use Monolog\Logger;
