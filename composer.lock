@@ -4,34 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f0fce9946ed2e8cac9bac0e1b8c295d",
+    "content-hash": "a946438401db48c4d846e8fe801b8bc1",
     "packages": [
         {
             "name": "elastic/ecs-logging",
-            "version": "1.0.3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/elastic/ecs-logging-php.git",
-                "reference": "2e26c08f4c1e852fdbb87758712ab633bbe7cd68"
+                "url": "git@github.com:elastic/ecs-logging-php.git",
+                "reference": "c748e55ae80d676f283551efb9b65d2b4b1881b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/ecs-logging-php/zipball/2e26c08f4c1e852fdbb87758712ab633bbe7cd68",
-                "reference": "2e26c08f4c1e852fdbb87758712ab633bbe7cd68",
+                "url": "https://api.github.com/repos/elastic/ecs-logging-php/zipball/c748e55ae80d676f283551efb9b65d2b4b1881b6",
+                "reference": "c748e55ae80d676f283551efb9b65d2b4b1881b6",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.2||^8.0",
-                "psr/log": "^1.0.1"
+                "php": ">=8.1",
+                "psr/log": "^1|^2|3"
             },
             "provide": {
                 "psr/log-implementation": "1.0.0"
             },
             "require-dev": {
-                "brianium/paratest": "^3.1",
-                "monolog/monolog": "^2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.3.0",
+                "monolog/monolog": "^3.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpunit/phpunit": "^8.5||^9.5||^10",
                 "squizlabs/php_codesniffer": "3.*"
             },
             "type": "library",
@@ -53,6 +53,10 @@
                 {
                     "name": "Sergey Kleyman",
                     "homepage": "https://github.com/SergeyKleyman"
+                },
+                {
+                    "name": "Pawel Filipczak",
+                    "homepage": "https://github.com/intuibase"
                 }
             ],
             "description": "Format and enrich your log files in the elastic common schema",
@@ -65,38 +69,34 @@
                 "logging",
                 "psr-3"
             ],
-            "support": {
-                "issues": "https://github.com/elastic/ecs-logging-php/issues",
-                "source": "https://github.com/elastic/ecs-logging-php/tree/1.0.3"
-            },
-            "time": "2021-04-29T17:57:26+00:00"
+            "time": "2024-01-31T08:27:33+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.1.4",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Log\\": "Psr/Log/"
+                    "Psr\\Log\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -117,9 +117,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.4"
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
-            "time": "2021-05-03T11:20:27+00:00"
+            "time": "2021-07-14T16:46:02+00:00"
         }
     ],
     "packages-dev": [],
@@ -128,7 +128,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.4"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
